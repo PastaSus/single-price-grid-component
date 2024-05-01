@@ -1,0 +1,295 @@
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+
+
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+.karla {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Karla', sans-serif;
+  position: relative;
+  height: 100vh;
+  background-color: var(--Light-Gray);
+}
+
+.community {
+  padding-bottom: 30px;
+  color: var(--Cyan);
+}
+
+#moneyback {
+  color: var(--Bright-Yellow);
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+
+
+p {
+  font-size: 16px;
+}
+
+.subscription {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.permonth {
+  align-self: center;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  opacity: .8;
+  color: var(--Light-Gray);
+}
+
+.pricetag {
+  display: flex;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.pricetag h1 {
+  margin-bottom: 10px;
+}
+
+.access {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.signup {
+
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-right: 100px;
+  padding-left: 100px;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: var(--Bright-Yellow);
+  
+}
+
+.whyus {
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.grid1 {
+  background-color: white;
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 80px;
+  
+}
+
+
+.grid1 p{
+  color: var(--Grayish-Blue);
+  line-height: 1;
+}
+
+#p1textcombined{
+  line-height: 1.5;
+}
+
+#p1 {
+  margin-bottom: 20px;
+}
+
+#p2 {
+  margin-top: 7px;
+}
+
+.grid2 {
+  color: var(--Light-Gray);
+  background-color: hsl(179, 55%, 44%);
+  
+  border-bottom-left-radius: 10px;
+  padding-left: 40px;
+  padding-top: 30px;
+  padding-right: 35px;
+  padding-bottom: 40px;
+}
+
+.grid2content{
+  margin-top: 15px;
+}
+
+.grid3 {
+  color: var(--Light-Gray);
+  background-color: hsl(179, 56%, 48%);
+  border-bottom-right-radius: 10px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  
+}
+
+.grid3 p{
+  line-height: 1;
+  font-weight: 400;
+  
+}
+
+ul li {
+  list-style: none;
+  line-height: 1.3;
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--Light-Gray);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  
+}
+
+main {
+  padding: 20px;
+  height: 100%;
+  max-width: 800px;
+  min-width: 390px;
+  min-height: 300px;
+  display: flex;
+  margin: 20px auto;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width:425px) {
+
+  main {
+    display: block;
+    max-width: 390px;
+  }
+
+  .community {
+    margin-bottom: 0px;
+  }
+
+  .signup {
+   
+    margin-left: 5px;
+    text-align: center;
+    padding-top: 15px;
+    padding-right: 135px;
+    padding-bottom: 15px;
+  }
+
+  .signup p{
+    margin-left: 7px;
+  }
+
+  .whyus {
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+
+  br{
+    display: none;
+  }
+
+  .grid1 {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 25px;
+    grid-column: 1 / span 1;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+   
+  .grid1textcombined{
+    line-height: 2;
+  }
+
+  .grid1content {
+    min-width: 295px;
+    /* margin-right: 35px;  */
+  }
+
+  
+
+
+  .grid2{
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 15px;
+    padding-bottom: 30px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .grid2content {
+    margin-left: 5px;
+  }
+
+  .grid2text {
+    margin-left: 5px;
+  }
+
+  .grid3 {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-bottom: 25px;
+  }
+
+  ul {
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-left: 5px;
+  } 
+
+  ul li {
+    line-height: 1.5;
+  }
+
+  .content {
+    
+      /* Remove grid properties */
+       /* display: grid;
+      grid-template-columns: 1fr 1fr;  */
+    
+       /* Center the content vertically and horizontally  */
+      /* display: flex; */
+      /* height: 800px; */
+      grid-template-columns: 1fr; /* 1 equal-width columns */
+  } 
+
+   .main {
+    
+    display: flex;
+    
+    
+  }
+} 
+    
+  
+
+
+
+
